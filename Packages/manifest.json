@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.stella3d.osccore": "https://github.com/stella3d/OscCore.git",
     "com.unity.collab-proxy": "2.10.1",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.7",
