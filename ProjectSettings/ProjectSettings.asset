@@ -162,7 +162,9 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Standalone: com.DefaultCompany.OSCCore-MySample
+    iPhone: com.DefaultCompany.OSCCore-MySample
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -844,7 +846,8 @@ PlayerSettings:
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}
-  il2cppCodeGeneration: {}
+  il2cppCodeGeneration:
+    iPhone: 1
   managedStrippingLevel:
     EmbeddedLinux: 1
     GameCoreScarlett: 1
