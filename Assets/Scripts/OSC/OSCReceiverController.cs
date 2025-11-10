@@ -9,8 +9,8 @@ namespace OscCore
         [SerializeField] TopView _topView;
 
         // アドレスは 「/test/string」 と 「/test/int」のように 「/」 で始まる形式にする必要がある
-        private const string IP_ADDRESS_TEST_STRING = "/test/string";
-        private const string IP_ADDRESS_TEST_INT = "/test/int";
+        private const string ADDRESS_TEST_STRING = "/test/string";
+        private const string ADDRESS_TEST_INT = "/test/int";
 
         // Mainスレッドで扱うための変数
         private string _receivedStringValue;
@@ -18,7 +18,7 @@ namespace OscCore
 
         void Start()
         {
-            _receiver.Server.TryAddMethodPair(IP_ADDRESS_TEST_STRING, ReadStringValue, HandleStringValue);
+            _receiver.Server.TryAddMethodPair(ADDRESS_TEST_STRING, ReadStringValue, HandleStringValue);
             // _receiver.Server.TryAddMethodPair(IP_ADDRESS_TEST_INT, ReadIntValue, HandleIntValue);
         }
 
