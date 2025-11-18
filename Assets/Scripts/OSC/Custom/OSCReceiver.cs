@@ -37,7 +37,8 @@ namespace CustomSample
             try
             {
                 OscServer.Remove(_portNumber);
-                _server = new OscServer(_portNumber);
+                // _server = new OscServer(_portNumber); ← 非推奨
+                _server = OscServer.GetOrCreate(_portNumber);
                 _server.TryAddMethodPair(_address, ReadInt, ProcessIntOnMainThread);
             }
             catch (System.Exception e)
